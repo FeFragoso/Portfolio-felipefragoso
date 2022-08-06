@@ -108,15 +108,15 @@ h1 {
         ;
     }
 
-    #btn-linkedin {
+    #link-linkedin {
         grid-area: btn1;
     }
 
-    #btn-github {
+    #link-github {
         grid-area: btn2;
     }
 
-    #btn-curriculo {
+    #link-curriculo {
         grid-area: btn3;
     }
 }

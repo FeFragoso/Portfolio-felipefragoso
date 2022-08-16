@@ -68,7 +68,7 @@ body {
 
 /* Animação de Entrada dos Botões */
 
-@keyframes entrada {
+@keyframes entrada-btn {
     0% {
         left: -100vh;
         opacity: 0;
@@ -85,17 +85,17 @@ body {
 
 #link-linkedin {
     position: relative;
-    animation: entrada 0.5s linear;
+    animation: entrada-btn 0.5s linear;
 }
 
 #link-github {
     position: relative;
-    animation: entrada 0.75s linear;
+    animation: entrada-btn 0.75s linear;
 }
 
 #link-curriculo {
     position: relative;
-    animation: entrada 1s linear;
+    animation: entrada-btn 1s linear;
 }
 
 /* -------------------------------------------------- */
@@ -128,10 +128,46 @@ body {
 .h1-texto {
     font-weight: bold;
     font-size: 12.5vh;
-    line-height: 0.5;
+    line-height: 1;
     
     color: #fff;
     text-shadow: 3.5px 3.5px #174e6d;
+}
+
+/* -------------------------------------------------- */
+
+/* Animação de Entrada do Titulo */
+
+@keyframes entrada-h1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor { 
+    0% {
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+#h1-hello {
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: cursor 2.5s steps(60) normal, entrada-h1 1.75s steps(30) 0.5s normal both;
+}
+
+#h1-felipe {
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: cursor 1s steps(60) 1.5s infinite normal, entrada-h1 2s steps(30) 1.5s normal both;
 }
 
 /* -------------------------------------------------- */
